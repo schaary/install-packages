@@ -1,4 +1,4 @@
-locale-gen de_DE.UTF-8
+/usr/sbin/locale-gen de_DE.UTF-8
 
 /usr/bin/apt-get update
 /usr/bin/apt-get upgrade -y
