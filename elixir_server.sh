@@ -59,7 +59,7 @@
   erlang-tools \
   erlang-common-test \
   esl-erlang \
-  erlang-parsetools-dev \
+  erlang-parsetools \
   elixir
 
 /usr/bin/bash -c '/usr/bin/echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
@@ -69,7 +69,7 @@
 
 /usr/bin/apt-get update
 /usr/bin/apt-get upgrade -y
-/usr/bin/apt-get install -y postgresql-9.4
+/usr/bin/apt-get install -y postgresql
 
 /usr/bin/curl -sL https://deb.nodesource.com/setup_5.x | bash -
 /usr/bin/apt-get install -y nodejs
