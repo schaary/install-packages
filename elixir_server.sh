@@ -17,7 +17,6 @@
 /usr/bin/add-apt-repository -y ppa:mizuno-as/silversearcher-ag
 /usr/bin/add-apt-repository -y ppa:neovim-ppa/unstable
 /usr/bin/add-apt-repository -y ppa:chris-lea/redis-server
-/usr/bin/apt-add-repository -y ppa:chris-lea/node.js
 /usr/bin/apt-get update
 /usr/bin/apt-get install -y \
   zlib1g \
@@ -31,7 +30,6 @@
   nginx \
   neovim \
   ca-certificates \
-  inotify-tools \
   git-core \
   inotify-tools
 
