@@ -1,3 +1,5 @@
+locale-get de_DE.UTF-8
+
 /usr/bin/apt-get update
 /usr/bin/apt-get upgrade -y
 /usr/bin/apt-get install -y \
