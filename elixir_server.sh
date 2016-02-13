@@ -50,6 +50,11 @@
 
 /usr/bin/apt-get update
 /usr/bin/apt-get install -y \
+  esl-erlang \
+  elixir
+
+/usr/bin/apt-get update
+/usr/bin/apt-get install -y \
   erlang-dev \
   erlang-ssl \
   erlang-inets \
@@ -58,9 +63,7 @@
   erlang-eunit \
   erlang-tools \
   erlang-common-test \
-  esl-erlang \
-  erlang-parsetools \
-  elixir
+  erlang-parsetools 
 
 /usr/bin/bash -c '/usr/bin/echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 
