@@ -3,7 +3,17 @@
 /usr/bin/apt-get update
 /usr/bin/apt-get upgrade -y
 
-/usr/bin/apt-get install -y software-properties-common python-software-properties
+/usr/bin/apt-get install -y \
+  libcurl4-gnutls-dev \
+  python-pycurl-dbg \
+  python-pycurl \
+  software-properties-common \
+  python-software-properties
+
+if [ $? -ne 0 ]
+then
+  echo "Installation von python-software-properties fehlgeschlagen!"
+fi
 
 /usr/bin/add-apt-repository -y ppa:ubuntu-elisp/ppa
 /usr/bin/add-apt-repository -y ppa:fish-shell/release-2
@@ -15,7 +25,6 @@
 /usr/bin/apt-add-repository -y ppa:chris-lea/node.js
 
 /usr/bin/apt-get update
-
 /usr/bin/apt-get install -y \
   build-essential \
   zlib1g \
