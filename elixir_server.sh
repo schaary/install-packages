@@ -7,20 +7,24 @@
   software-properties-common \
   python-software-properties
 
-if [ $? -ne 0 ]
-then
-  echo "Installation von python-software-properties fehlgeschlagen!"
-fi
-#
-#/usr/bin/add-apt-repository -y ppa:ubuntu-elisp/ppa
-#/usr/bin/add-apt-repository -y ppa:fish-shell/release-2
-#/usr/bin/add-apt-repository -y ppa:git-core/ppa
-#/usr/bin/add-apt-repository -y ppa:nginx/stable
-#/usr/bin/add-apt-repository -y ppa:mizuno-as/silversearcher-ag
-#/usr/bin/add-apt-repository -y ppa:neovim-ppa/unstable
-#/usr/bin/add-apt-repository -y ppa:chris-lea/redis-server
-#/usr/bin/apt-add-repository -y ppa:chris-lea/node.js
-#
+if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgeschlagen!"; fi
+/usr/bin/add-apt-repository -y ppa:ubuntu-elisp/ppa
+if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgeschlagen!"; fi
+/usr/bin/add-apt-repository -y ppa:fish-shell/release-2
+if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgeschlagen!"; fi
+/usr/bin/add-apt-repository -y ppa:git-core/ppa
+if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgeschlagen!"; fi
+/usr/bin/add-apt-repository -y ppa:nginx/stable
+if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgeschlagen!"; fi
+/usr/bin/add-apt-repository -y ppa:mizuno-as/silversearcher-ag
+if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgeschlagen!"; fi
+/usr/bin/add-apt-repository -y ppa:neovim-ppa/unstable
+if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgeschlagen!"; fi
+/usr/bin/add-apt-repository -y ppa:chris-lea/redis-server
+if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgeschlagen!"; fi
+/usr/bin/apt-add-repository -y ppa:chris-lea/node.js
+if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgeschlagen!"; fi
+
 #/usr/bin/apt-get update
 #/usr/bin/apt-get install -y \
 #  build-essential \
