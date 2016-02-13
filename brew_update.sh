@@ -1,3 +1,3 @@
 #!/bin/bash
 
-brew update
+/usr/local/bin/brew update
