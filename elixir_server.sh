@@ -24,7 +24,6 @@ if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgesc
 if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgeschlagen!"; fi
 /usr/bin/apt-add-repository -y ppa:chris-lea/node.js
 if [ $? -ne 0 ]; then echo "Installation von python-software-properties fehlgeschlagen!"; fi
-
 /usr/bin/apt-get update
 /usr/bin/apt-get install -y \
   build-essential \
