@@ -62,9 +62,8 @@
   erlang-common-test \
   erlang-parsetools 
 
-/usr/bin/bash -c '/usr/bin/echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-/usr/bin/curl -s -o- https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
-  /usr/bin/apt-key add -
+sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
 
 /usr/bin/apt-get update > /dev/null
 /usr/bin/apt-get install -y postgresql
